@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #2129a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#line1,#line2,#line3{
+    height: 100px;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+#line3 div{
+    height: 40px;
+    width: auto;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#ys,#cs{
+    font-size: 40px;
+}
+#line1{
+    margin-top: 40px;
+}
+#line1 div{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:none;
+}
+#line1 div:hover{
+    scale: 1.2;
+    filter: saturate(5);
+    cursor: pointer;
+}
+#rock{
+    background-image: url(./RESOURCES/rock.jpg);
+background-size: contain;
+}
+#paper{
+    background-image: url(./RESOURCES/paper.jpg);
+    background-size: contain;
+}
+#scissor{
+    background-image: url(./RESOURCES/scissors.jpg);
+    background-size: contain;
+}
+#reset{
+    height: 40px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: orange;;
+    font-size: 25px;
+    font-weight: bolder;
+    border: 2px solid ;
+}
