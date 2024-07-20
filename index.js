@@ -19,15 +19,10 @@ choices.forEach((choice)=>{
     const playGame=(userChoice)=>{
         let computerChoice=compChoice();
         let userWin=true;
-        if(userChoice==computerChoice){
+        if(userChoice == computerChoice){
 result.innerText="game was draw!";
         }else if(userChoice=="rock"){
         userWin= computerChoice=="paper"? false : true;
-        }else if(userChoice=="paper"){
-            userWin=computerChoice=="scissor"?false:true;
-        }else if(userChoice=="scissor"){
-            userWin=computerChoice=="rock"?false:true;
-        }
         if(userWin==true){
             ys++;
             result.innerText="you won , computer choice was "+ computerChoice;
@@ -38,5 +33,31 @@ result.innerText="game was draw!";
             result.innerText="you lost , computer chocie was "+ computerChoice;
             document.getElementById("cs").innerText=cs;
         }
+        }else if(userChoice=="paper"){
+            userWin=computerChoice=="scissor"?false:true;
+            if(userWin==true){
+                ys++;
+                result.innerText="you won , computer choice was "+ computerChoice;
+                document.getElementById("ys").innerText=ys;
+    
+            }else{
+                cs++;
+                result.innerText="you lost , computer chocie was "+ computerChoice;
+                document.getElementById("cs").innerText=cs;
+            }
+        }else if(userChoice=="scissor"){
+            userWin=computerChoice=="rock"?false:true;
+            if(userWin==true){
+                ys++;
+                result.innerText="you won , computer choice was "+ computerChoice;
+                document.getElementById("ys").innerText=ys;
+    
+            }else{
+                cs++;
+                result.innerText="you lost , computer chocie was "+ computerChoice;
+                document.getElementById("cs").innerText=cs;
+            }
+        }
+
     }
 })

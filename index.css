@@ -1,95 +1,134 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-header{
+
+body {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+header {
     height: 80px;
     width: 100%;
-    background-color: #2129a3;
+    background-color: #1e90ff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    font-weight: 4px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
     color: white;
+    text-transform: uppercase;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
 }
-#line1,#line2,#line3{
-    height: 100px;
+
+#line1, #line2, #line3 {
     margin-top: 40px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
+    flex-wrap: wrap;
 }
-#line3 div{
+
+#line3 div {
     height: 40px;
     width: auto;
-    border: solid;
+    border: 2px solid #32cd32;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    background-color: orange;
+    background-color: #ff6347;
     padding-left: 15px;
     padding-right: 15px;
+    color: white;
+    font-weight: bold;
 }
-#s{
+
+#s {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-#ys,#cs{
+
+#ys, #cs {
     font-size: 40px;
+    font-weight: bold;
+    color: #1e90ff;
 }
-#line1{
+
+#line1 {
     margin-top: 40px;
 }
-#line1 div{
+
+#line1 div {
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:none;
+    padding: none;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    transition: transform 0.2s, filter 0.2s;
 }
-#line1 div:hover{
-    scale: 1.2;
-    filter: saturate(5);
+
+#line1 div:hover {
+    transform: scale(1.2);
+    filter: saturate(1.5);
     cursor: pointer;
 }
-#rock{
-    background-image: url(./RESOURCES/rock.jpg);
-background-size: contain;
-}
-#paper{
-    background-image: url(./RESOURCES/paper.jpg);
+
+#rock {
+    background-image: url('https://img.icons8.com/?size=100&id=Iqzd6gV1vpm5&format=png&color=000000');
     background-size: contain;
 }
-#scissor{
-    background-image: url(./RESOURCES/scissors.jpg);
+
+#paper {
+    background-image: url('https://img.icons8.com/?size=100&id=qGwgMt9xZDy5&format=png&color=000000');
     background-size: contain;
 }
-#reset{
+
+#scissor {
+    background-image: url('https://img.icons8.com/?size=100&id=6JzKFBpKhXjH&format=png&color=000000');
+    background-size: contain;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#reset {
     height: 40px;
-    width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 5px;
-    background-color: orange;;
+    background-color: #32cd32;
+    color: white;
     font-size: 25px;
-    font-weight: bolder;
-    border: 2px solid ;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset:hover {
+    background-color: #228b22;
 }
